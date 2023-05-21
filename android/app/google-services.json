@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1026112317855",
+    "project_id": "pvz-plantswiki",
+    "storage_bucket": "pvz-plantswiki.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026112317855:android:d78a70f161c74a574e35aa",
+        "android_client_info": {
+          "package_name": "com.example.pvzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026112317855-mmlrgb4unlu0lp0og893btcb1ojnu0hn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Yo9k91fcwImm0dHdEOh8roI9h8SDmZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026112317855-mmlrgb4unlu0lp0og893btcb1ojnu0hn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
