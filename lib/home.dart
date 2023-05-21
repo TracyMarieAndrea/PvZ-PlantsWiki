@@ -105,378 +105,426 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 8),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/sunflower.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Sunflower',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 8),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/sunflower.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Sunflower',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 5),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/peashooter.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Peashooter',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/peashooter.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Peashooter',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 5),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/wallnut.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Wallnut',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/wallnut.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Wallnut',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 5),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/potato_mine.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Potato Mine',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/potato_mine.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Potato Mine',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 5),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/cherry_bomb.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Cherry Bomb',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/cherry_bomb.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Cherry Bomb',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 5),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/chomper.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Chomper',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/chomper.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Chomper',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 5),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/repeater.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Repeater',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/repeater.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Repeater',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                       Column(
                         children: [
-                          Container(
-                              height: 160,
-                              width: 160,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.white,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 1.5,
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 0,
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 10),
-                                    )
-                                  ]),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const SizedBox(height: 5),
-                                  Center(
-                                    child: Image.asset(
-                                      'assets/snowpea.png',
-                                      height: 90,
-                                      width: 90,
-                                      fit: BoxFit.contain,
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
                                     ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  const Center(
-                                    child: Text(
-                                      'Snowpea',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontFamily: 'Gideon',
-                                          color: Color(0xff4E7B52),
-                                          fontWeight: FontWeight.bold),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/snowpea.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              )),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Snowpea',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                     ],
