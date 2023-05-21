@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'aboutus_screen.dart';
 import 'home.dart';
@@ -136,6 +137,6 @@ ListTile exitTile() {
       style:
           TextStyle(fontFamily: 'Poppins', fontSize: 20, color: Colors.black),
     ),
-    onTap: () {},
+    onTap: () {SystemNavigator.pop();},
   );
 }

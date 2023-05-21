@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pvzapp/details_screen.dart';
 import 'app_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -108,7 +109,12 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const DetailsScreen()),
+                              );
                             },
                             child: Container(
                                 height: 160,
