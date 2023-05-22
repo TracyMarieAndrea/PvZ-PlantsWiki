@@ -110,13 +110,13 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DetailsScreen(
-                                        documentId: "yO52Xt7VbSrGdcC5Kpgd"),
-                                  ),
-                                );  
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "yO52Xt7VbSrGdcC5Kpgd"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -168,13 +168,13 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           GestureDetector(
                             onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DetailsScreen(
-                                        documentId: "ygf7TVq5p7JTqrMOp1lD"),
-                                  ),
-                                );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "ygf7TVq5p7JTqrMOp1lD"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -227,13 +227,14 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DetailsScreen(
-                                        documentId: "0yN7mnjnmtZQTRubgUT4",),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                    documentId: "0yN7mnjnmtZQTRubgUT4",
                                   ),
-                                );
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -286,7 +287,13 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "dWzO8iTQMqa6cmY9Nc6q"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -339,7 +346,13 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "Mtc0KAjq8gQZbpmLHI1e"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -392,7 +405,13 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "pLkHxXhp3OVpinBWZAkP"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -445,7 +464,13 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "RoXUDBJMhHM9jkGgrheJ"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -498,7 +523,13 @@ class HomeScreen extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "RwTE8SnCjjbkQms9CInJ"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -552,6 +583,4 @@ class HomeScreen extends StatelessWidget {
               ])),
         ));
   }
-
- 
 }

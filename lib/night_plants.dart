@@ -26,7 +26,7 @@ class NightPlants extends StatelessWidget {
         body: SingleChildScrollView(
           child: Container(
               padding:
-              const EdgeInsets.symmetric(vertical: 15, horizontal: 25.0),
+                  const EdgeInsets.symmetric(vertical: 15, horizontal: 25.0),
               decoration: const BoxDecoration(),
               child: Column(children: [
                 Row(
@@ -78,7 +78,7 @@ class NightPlants extends StatelessWidget {
                             hintText: 'Enter plant name...',
                             border: InputBorder.none,
                             contentPadding:
-                            EdgeInsets.symmetric(vertical: 15.0),
+                                EdgeInsets.symmetric(vertical: 15.0),
                             prefixIcon: Icon(Icons.search),
                           ),
                         ),
@@ -99,10 +99,10 @@ class NightPlants extends StatelessWidget {
                   height: 620,
                   child: GridView(
                     gridDelegate:
-                    const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        mainAxisSpacing: 10,
-                        crossAxisSpacing: 10),
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 10,
+                            crossAxisSpacing: 10),
                     children: [
                       Column(
                         children: [
@@ -110,12 +110,12 @@ class NightPlants extends StatelessWidget {
                             onTap: () {
                               // Handle the tap event here
                               Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DetailsScreen(
-                                        documentId: "7akGYuHG5hl5AHu03768"),
-                                  ),
-                                );  
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "7akGYuHG5hl5AHu03768"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -168,7 +168,13 @@ class NightPlants extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "k8J39vCI3rDIrpWe7hZ6"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -221,7 +227,13 @@ class NightPlants extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "vMhJ4ggYHxKInHtdIBgC"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -274,7 +286,13 @@ class NightPlants extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "7KnhSZ6nXJ1vPrMHqqJq"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -327,7 +345,13 @@ class NightPlants extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "EKcICDewQJFczc7YxTSr"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -380,7 +404,13 @@ class NightPlants extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "oMpjKm3nF2bnvu6GpayN"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -433,7 +463,13 @@ class NightPlants extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "6RXC7ehwKjs2GAaytSwc"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
@@ -486,7 +522,13 @@ class NightPlants extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                              print('Container pressed!');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailsScreen(
+                                      documentId: "EFIslhOTknlvF5mwIVJK"),
+                                ),
+                              );
                             },
                             child: Container(
                                 height: 160,
