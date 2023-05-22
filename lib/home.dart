@@ -468,7 +468,7 @@ class HomeScreen extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => DetailsScreen(
-                                      documentId: "RoXUDBJMhHM9jkGgrheJ"),
+                                      documentId: "xKnw8RlmRSXEXruKkUOm"),
                                 ),
                               );
                             },
