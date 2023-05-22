@@ -1,10 +1,9 @@
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'app_drawer.dart';
 import 'details.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class NightPlants extends StatelessWidget {
+  const NightPlants({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,13 +26,13 @@ class HomeScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Container(
               padding:
-                  const EdgeInsets.symmetric(vertical: 15, horizontal: 25.0),
+              const EdgeInsets.symmetric(vertical: 15, horizontal: 25.0),
               decoration: const BoxDecoration(),
               child: Column(children: [
                 Row(
                   children: const [
                     Text(
-                      'Day Plants',
+                      'Night Plants',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         color: Colors.black,
@@ -51,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                   child: const SizedBox(
                     width: 330,
                     child: Text(
-                      'Day plants in Plants vs Zombies refer to a set of plant species that are available in the daytime levels.',
+                      'A unique group of plants that thrive in the darkness. They play a crucial role in defending night levels of the game.',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         color: Colors.black,
@@ -79,7 +78,7 @@ class HomeScreen extends StatelessWidget {
                             hintText: 'Enter plant name...',
                             border: InputBorder.none,
                             contentPadding:
-                                EdgeInsets.symmetric(vertical: 15.0),
+                            EdgeInsets.symmetric(vertical: 15.0),
                             prefixIcon: Icon(Icons.search),
                           ),
                         ),
@@ -100,21 +99,21 @@ class HomeScreen extends StatelessWidget {
                   height: 620,
                   child: GridView(
                     gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            mainAxisSpacing: 10,
-                            crossAxisSpacing: 10),
+                    const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 10,
+                        crossAxisSpacing: 10),
                     children: [
                       Column(
                         children: [
                           GestureDetector(
                             onTap: () {
                               // Handle the tap event here
-                                Navigator.push(
+                              Navigator.push(
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) => DetailsScreen(
-                                        documentId: "yO52Xt7VbSrGdcC5Kpgd"),
+                                        documentId: "7akGYuHG5hl5AHu03768"),
                                   ),
                                 );  
                             },
@@ -142,138 +141,21 @@ class HomeScreen extends StatelessWidget {
                                     const SizedBox(height: 8),
                                     Center(
                                       child: Image.asset(
-                                        'assets/sunflower.png',
-                                        height: 90,
-                                        width: 90,
+                                        'assets/sun-shroom.png',
+                                        height: 80,
+                                        width: 80,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    const SizedBox(height: 8),
+                                    const SizedBox(height: 10),
                                     const Center(
                                       child: Text(
-                                        'Sunflower',
+                                        'Sun-shroom',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 19,
                                             fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DetailsScreen(
-                                        documentId: "ygf7TVq5p7JTqrMOp1lD"),
-                                  ),
-                                );
-                            },
-                            child: Container(
-                                height: 160,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                      width: 1.5,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.2),
-                                        spreadRadius: 0,
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 10),
-                                      )
-                                    ]),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const SizedBox(height: 5),
-                                    Center(
-                                      child: Image.asset(
-                                        'assets/peashooter.png',
-                                        height: 90,
-                                        width: 90,
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 8),
-                                    const Center(
-                                      child: Text(
-                                        'Peashooter',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              // Handle the tap event here
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DetailsScreen(
-                                        documentId: "0yN7mnjnmtZQTRubgUT4",),
-                                  ),
-                                );
-                            },
-                            child: Container(
-                                height: 160,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                      width: 1.5,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.2),
-                                        spreadRadius: 0,
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 10),
-                                      )
-                                    ]),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const SizedBox(height: 5),
-                                    Center(
-                                      child: Image.asset(
-                                        'assets/wallnut.png',
-                                        height: 90,
-                                        width: 90,
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 8),
-                                    const Center(
-                                      child: Text(
-                                        'Wallnut',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
                                       ),
                                     ),
                                   ],
@@ -312,21 +194,21 @@ class HomeScreen extends StatelessWidget {
                                     const SizedBox(height: 5),
                                     Center(
                                       child: Image.asset(
-                                        'assets/potato_mine.png',
-                                        height: 90,
-                                        width: 90,
+                                        'assets/puff-shroom.png',
+                                        height: 75,
+                                        width: 75,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    const SizedBox(height: 8),
+                                    const SizedBox(height: 17),
                                     const Center(
                                       child: Text(
-                                        'Potato Mine',
+                                        'Puff-shroom',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 18.5,
                                             fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
                                       ),
                                     ),
                                   ],
@@ -365,21 +247,21 @@ class HomeScreen extends StatelessWidget {
                                     const SizedBox(height: 5),
                                     Center(
                                       child: Image.asset(
-                                        'assets/cherry_bomb.png',
-                                        height: 90,
-                                        width: 90,
+                                        'assets/fume-shroom.png',
+                                        height: 93,
+                                        width: 93,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
                                     const SizedBox(height: 8),
                                     const Center(
                                       child: Text(
-                                        'Cherry Bomb',
+                                        'Fume-shroom',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 18,
                                             fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
                                       ),
                                     ),
                                   ],
@@ -418,21 +300,21 @@ class HomeScreen extends StatelessWidget {
                                     const SizedBox(height: 5),
                                     Center(
                                       child: Image.asset(
-                                        'assets/chomper.png',
-                                        height: 90,
-                                        width: 90,
+                                        'assets/grave-buster.png',
+                                        height: 95,
+                                        width: 95,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    const SizedBox(height: 8),
+                                    const SizedBox(height: 10),
                                     const Center(
                                       child: Text(
-                                        'Chomper',
+                                        'Grave Buster',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 19,
                                             fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
                                       ),
                                     ),
                                   ],
@@ -471,21 +353,21 @@ class HomeScreen extends StatelessWidget {
                                     const SizedBox(height: 5),
                                     Center(
                                       child: Image.asset(
-                                        'assets/repeater.png',
+                                        'assets/hypno-shroom.png',
                                         height: 90,
                                         width: 90,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    const SizedBox(height: 8),
+                                    const SizedBox(height: 10),
                                     const Center(
                                       child: Text(
-                                        'Repeater',
+                                        'Hypno-shroom',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 19,
                                             fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
                                       ),
                                     ),
                                   ],
@@ -524,21 +406,127 @@ class HomeScreen extends StatelessWidget {
                                     const SizedBox(height: 5),
                                     Center(
                                       child: Image.asset(
-                                        'assets/snowpea.png',
+                                        'assets/ice-shroom.png',
+                                        height: 95,
+                                        width: 95,
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 5),
+                                    const Center(
+                                      child: Text(
+                                        'Ice-shroom',
+                                        style: TextStyle(
+                                            fontSize: 19,
+                                            fontFamily: 'Gideon',
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/doom-shroom.png',
+                                        height: 87,
+                                        width: 87,
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 10),
+                                    const Center(
+                                      child: Text(
+                                        'Doom-shroom',
+                                        style: TextStyle(
+                                            fontSize: 19,
+                                            fontFamily: 'Gideon',
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              print('Container pressed!');
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/scaredy-shroom.png',
                                         height: 90,
                                         width: 90,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    const SizedBox(height: 8),
+                                    const SizedBox(height: 9),
                                     const Center(
                                       child: Text(
-                                        'Snowpea',
+                                        'Scaredy-shroom',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 18.5,
                                             fontFamily: 'Gideon',
-                                            color: Color(0xff4E7B52),
-                                            fontWeight: FontWeight.bold),
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600),
                                       ),
                                     ),
                                   ],
@@ -552,6 +540,4 @@ class HomeScreen extends StatelessWidget {
               ])),
         ));
   }
-
- 
 }

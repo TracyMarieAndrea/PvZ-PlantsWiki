@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:pvzapp/night_plants.dart';
 import 'aboutus_screen.dart';
 import 'home.dart';
 
@@ -15,17 +15,17 @@ Widget appBarDrawer(BuildContext context) {
       ),
       homeTile(context),
       const SizedBox(
-        height: 20,
+        height: 10,
       ),
-      plantTile(),
+      dayplantTile(context),
       const SizedBox(
-        height: 20,
+        height: 10,
+      ),
+      nightplantTile(context),
+      const SizedBox(
+        height: 10,
       ),
       aboutTile(context),
-      const SizedBox(
-        height: 365,
-      ),
-      exitTile()
     ],
   ));
 }
@@ -58,11 +58,11 @@ DrawerHeader drawerHeader() {
 ListTile homeTile(BuildContext context) {
   return ListTile(
     leading: Padding(
-      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 13),
+      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 14),
       child: SvgPicture.asset(
         'assets/Home-icon.svg',
-        width: 30,
-        height: 30,
+        width: 25,
+        height: 25,
       ),
     ),
     title: const Text(
@@ -79,33 +79,62 @@ ListTile homeTile(BuildContext context) {
   );
 }
 
-ListTile plantTile() {
+ListTile dayplantTile(BuildContext context) {
   return ListTile(
     leading: Padding(
-      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 14),
+      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
       child: SvgPicture.asset(
-        'assets/plant-icon.svg',
-        width: 35,
-        height: 35,
+        'assets/day.svg',
+        width: 32,
+        height: 32,
       ),
     ),
     title: const Text(
-      'Plants',
+      'Day Plants',
       style:
           TextStyle(fontFamily: 'Poppins', fontSize: 18, color: Colors.black),
     ),
-    onTap: () {},
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+      );
+    },
+  );
+}
+
+ListTile nightplantTile(BuildContext context) {
+  return ListTile(
+    leading: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 13),
+      child: SvgPicture.asset(
+        'assets/night.svg',
+        width: 26,
+        height: 26,
+      ),
+    ),
+    title: const Text(
+      'Night Plants',
+      style:
+          TextStyle(fontFamily: 'Poppins', fontSize: 18, color: Colors.black),
+    ),
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const NightPlants()),
+      );
+    },
   );
 }
 
 ListTile aboutTile(BuildContext context) {
   return ListTile(
     leading: Padding(
-      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 12),
       child: SvgPicture.asset(
         'assets/about-icon.svg',
-        width: 30,
-        height: 30,
+        width: 26,
+        height: 26,
       ),
     ),
     title: const Text(
@@ -116,27 +145,8 @@ ListTile aboutTile(BuildContext context) {
     onTap: () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const AboutUs()),
+        MaterialPageRoute(builder: (context) => const NightPlants()),
       );
     },
-  );
-}
-
-ListTile exitTile() {
-  return ListTile(
-    leading: Padding(
-      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 9),
-      child: SvgPicture.asset(
-        'assets/exit.svg',
-        width: 30,
-        height: 30,
-      ),
-    ),
-    title: const Text(
-      'Exit',
-      style:
-          TextStyle(fontFamily: 'Poppins', fontSize: 20, color: Colors.black),
-    ),
-    onTap: () {SystemNavigator.pop();},
   );
 }
