@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'app_drawer.dart';
-import 'nightPlants_details.dart';
+import 'dayPlants_details.dart';
 
-class NightPlants extends StatelessWidget {
-  const NightPlants({super.key});
+class DayPlants extends StatelessWidget {
+  const DayPlants ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class NightPlants extends StatelessWidget {
                 Row(
                   children: const [
                     Text(
-                      'Night Plants',
+                      'Day Plants',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         color: Colors.black,
@@ -50,7 +50,7 @@ class NightPlants extends StatelessWidget {
                   child: const SizedBox(
                     width: 330,
                     child: Text(
-                      'A unique group of plants that thrive in the darkness. They play a crucial role in defending night levels of the game.',
+                      'Day plants in Plants vs Zombies refer to a set of plant species that are available in the daytime levels.',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         color: Colors.black,
@@ -112,9 +112,8 @@ class NightPlants extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "7akGYuHG5hl5AHu03768"),
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                      documentId: "yO52Xt7VbSrGdcC5Kpgd"),
                                 ),
                               );
                             },
@@ -142,141 +141,21 @@ class NightPlants extends StatelessWidget {
                                     const SizedBox(height: 8),
                                     Center(
                                       child: Image.asset(
-                                        'assets/sun-shroom.png',
-                                        height: 80,
-                                        width: 80,
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 10),
-                                    const Center(
-                                      child: Text(
-                                        'Sun-shroom',
-                                        style: TextStyle(
-                                            fontSize: 19,
-                                            fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              // Handle the tap event here
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "k8J39vCI3rDIrpWe7hZ6"),
-                                ),
-                              );
-                            },
-                            child: Container(
-                                height: 160,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                      width: 1.5,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.2),
-                                        spreadRadius: 0,
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 10),
-                                      )
-                                    ]),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const SizedBox(height: 5),
-                                    Center(
-                                      child: Image.asset(
-                                        'assets/puff-shroom.png',
-                                        height: 75,
-                                        width: 75,
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 17),
-                                    const Center(
-                                      child: Text(
-                                        'Puff-shroom',
-                                        style: TextStyle(
-                                            fontSize: 18.5,
-                                            fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              // Handle the tap event here
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "vMhJ4ggYHxKInHtdIBgC"),
-                                ),
-                              );
-                            },
-                            child: Container(
-                                height: 160,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                      width: 1.5,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.2),
-                                        spreadRadius: 0,
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 10),
-                                      )
-                                    ]),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const SizedBox(height: 5),
-                                    Center(
-                                      child: Image.asset(
-                                        'assets/fume-shroom.png',
-                                        height: 93,
-                                        width: 93,
+                                        'assets/sunflower.png',
+                                        height: 90,
+                                        width: 90,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
                                     const SizedBox(height: 8),
                                     const Center(
                                       child: Text(
-                                        'Fume-shroom',
+                                        'Sunflower',
                                         style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 20,
                                             fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                   ],
@@ -288,13 +167,11 @@ class NightPlants extends StatelessWidget {
                         children: [
                           GestureDetector(
                             onTap: () {
-                              // Handle the tap event here
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "7KnhSZ6nXJ1vPrMHqqJq"),
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                      documentId: "ygf7TVq5p7JTqrMOp1lD"),
                                 ),
                               );
                             },
@@ -322,81 +199,21 @@ class NightPlants extends StatelessWidget {
                                     const SizedBox(height: 5),
                                     Center(
                                       child: Image.asset(
-                                        'assets/grave-buster.png',
-                                        height: 95,
-                                        width: 95,
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 10),
-                                    const Center(
-                                      child: Text(
-                                        'Grave Buster',
-                                        style: TextStyle(
-                                            fontSize: 19,
-                                            fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              // Handle the tap event here
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "EKcICDewQJFczc7YxTSr"),
-                                ),
-                              );
-                            },
-                            child: Container(
-                                height: 160,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                      width: 1.5,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.2),
-                                        spreadRadius: 0,
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 10),
-                                      )
-                                    ]),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const SizedBox(height: 5),
-                                    Center(
-                                      child: Image.asset(
-                                        'assets/hypno-shroom.png',
+                                        'assets/peashooter.png',
                                         height: 90,
                                         width: 90,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    const SizedBox(height: 10),
+                                    const SizedBox(height: 8),
                                     const Center(
                                       child: Text(
-                                        'Hypno-shroom',
+                                        'Peashooter',
                                         style: TextStyle(
-                                            fontSize: 19,
+                                            fontSize: 20,
                                             fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                   ],
@@ -412,9 +229,9 @@ class NightPlants extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "oMpjKm3nF2bnvu6GpayN"),
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                    documentId: "0yN7mnjnmtZQTRubgUT4",
+                                  ),
                                 ),
                               );
                             },
@@ -442,141 +259,316 @@ class NightPlants extends StatelessWidget {
                                     const SizedBox(height: 5),
                                     Center(
                                       child: Image.asset(
-                                        'assets/ice-shroom.png',
-                                        height: 95,
-                                        width: 95,
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 5),
-                                    const Center(
-                                      child: Text(
-                                        'Ice-shroom',
-                                        style: TextStyle(
-                                            fontSize: 19,
-                                            fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              // Handle the tap event here
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "6RXC7ehwKjs2GAaytSwc"),
-                                ),
-                              );
-                            },
-                            child: Container(
-                                height: 160,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                      width: 1.5,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.2),
-                                        spreadRadius: 0,
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 10),
-                                      )
-                                    ]),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const SizedBox(height: 5),
-                                    Center(
-                                      child: Image.asset(
-                                        'assets/doom-shroom.png',
-                                        height: 87,
-                                        width: 87,
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 10),
-                                    const Center(
-                                      child: Text(
-                                        'Doom-shroom',
-                                        style: TextStyle(
-                                            fontSize: 19,
-                                            fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              // Handle the tap event here
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      NightPlantsDetailsScreen(
-                                          documentId: "EFIslhOTknlvF5mwIVJK"),
-                                ),
-                              );
-                            },
-                            child: Container(
-                                height: 160,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                      width: 1.5,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.2),
-                                        spreadRadius: 0,
-                                        blurRadius: 4,
-                                        offset: const Offset(0, 10),
-                                      )
-                                    ]),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const SizedBox(height: 5),
-                                    Center(
-                                      child: Image.asset(
-                                        'assets/scaredy-shroom.png',
+                                        'assets/wallnut.png',
                                         height: 90,
                                         width: 90,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    const SizedBox(height: 9),
+                                    const SizedBox(height: 8),
                                     const Center(
                                       child: Text(
-                                        'Scaredy-shroom',
+                                        'Wallnut',
                                         style: TextStyle(
-                                            fontSize: 18.5,
+                                            fontSize: 20,
                                             fontFamily: 'Gideon',
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                      documentId: "dWzO8iTQMqa6cmY9Nc6q"),
+                                ),
+                              );
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/potato_mine.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Potato Mine',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                      documentId: "Mtc0KAjq8gQZbpmLHI1e"),
+                                ),
+                              );
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/cherry_bomb.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Cherry Bomb',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                      documentId: "pLkHxXhp3OVpinBWZAkP"),
+                                ),
+                              );
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/chomper.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Chomper',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                      documentId: "xKnw8RlmRSXEXruKkUOm"),
+                                ),
+                              );
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/repeater.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Repeater',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Handle the tap event here
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DayPlantsDetailsScreen(
+                                      documentId: "RwTE8SnCjjbkQms9CInJ"),
+                                ),
+                              );
+                            },
+                            child: Container(
+                                height: 160,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.white,
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                      width: 1.5,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.2),
+                                        spreadRadius: 0,
+                                        blurRadius: 4,
+                                        offset: const Offset(0, 10),
+                                      )
+                                    ]),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const SizedBox(height: 5),
+                                    Center(
+                                      child: Image.asset(
+                                        'assets/snowpea.png',
+                                        height: 90,
+                                        width: 90,
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Center(
+                                      child: Text(
+                                        'Snowpea',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontFamily: 'Gideon',
+                                            color: Color(0xff4E7B52),
+                                            fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                   ],

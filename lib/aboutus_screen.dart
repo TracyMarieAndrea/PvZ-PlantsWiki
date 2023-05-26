@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pvzapp/home.dart';
 import 'app_drawer.dart';
 
 class AboutUs extends StatelessWidget {
@@ -9,7 +10,7 @@ class AboutUs extends StatelessWidget {
     return Scaffold(
       appBar: _buildAppBar(),
       drawer: appBarDrawer(context),
-      body: _buildBody(),
+      body: _buildBody(context),
     );
   }
 
@@ -28,7 +29,7 @@ class AboutUs extends StatelessWidget {
     );
   }
 
-  Container _buildBody() {
+  Container _buildBody(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 50),
       child: Column(
@@ -124,24 +125,32 @@ class AboutUs extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            margin: const EdgeInsets.fromLTRB(0, 30, 0, 0),
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 255, 255, 255),
-              border: Border.all(color: Colors.black, width: 1),
-              borderRadius: const BorderRadius.all(
-                Radius.circular(10),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const HomeScreen()),
+              );
+            },
+            child: Container(
+              margin: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 255, 255, 255),
+                border: Border.all(color: Colors.black, width: 1),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(10),
+                ),
               ),
-            ),
-            child: const Padding(
-              padding: EdgeInsets.fromLTRB(35, 10, 35, 10),
-              child: Text(
-                'Explore',
-                style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black),
+              child: const Padding(
+                padding: EdgeInsets.fromLTRB(35, 10, 35, 10),
+                child: Text(
+                  'Explore',
+                  style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black),
+                ),
               ),
             ),
           ),

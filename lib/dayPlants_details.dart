@@ -1,14 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:pvzapp/home.dart';
-import 'package:firebase_storage/firebase_storage.dart';
-
+import 'package:pvzapp/day_plants.dart';
 import 'app_drawer.dart';
 
-class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({super.key, required this.documentId});
+class DayPlantsDetailsScreen extends StatelessWidget {
+  const DayPlantsDetailsScreen({super.key, required this.documentId});
 
   final String documentId;
 
@@ -82,7 +78,7 @@ class DetailsScreen extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                          MaterialPageRoute(builder: (context) => DayPlants()),
                         );
                       },
                     ),
@@ -184,7 +180,7 @@ class DetailsScreen extends StatelessWidget {
                   ),
                   Container(
                     width: 400,
-                    height: 400,
+                    height: 600,
                     decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
@@ -236,7 +232,6 @@ class DetailsScreen extends StatelessWidget {
                                   ),
                                 )
                               ],
-                              //Enter plant description here
                             ),
                             Center(
                               child: Row(
@@ -244,7 +239,7 @@ class DetailsScreen extends StatelessWidget {
                                 children: [
                                   Container(
                                     width: 150,
-                                    height: 40,
+                                    //height: 50,
                                     alignment: AlignmentDirectional.center,
                                     child: Text(
                                       'Special: $special',
@@ -260,7 +255,7 @@ class DetailsScreen extends StatelessWidget {
                                   ),
                                   Container(
                                     width: 150,
-                                    height: 40,
+                                    //height: 40,
                                     alignment: AlignmentDirectional.center,
                                     child: Text(
                                       'Range: $range',

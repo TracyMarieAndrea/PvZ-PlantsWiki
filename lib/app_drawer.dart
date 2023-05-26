@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:pvzapp/day_plants.dart';
 import 'package:pvzapp/night_plants.dart';
 import 'aboutus_screen.dart';
 import 'home.dart';
@@ -26,6 +28,8 @@ Widget appBarDrawer(BuildContext context) {
         height: 10,
       ),
       aboutTile(context),
+      Spacer(),
+      exitTile(context),
     ],
   ));
 }
@@ -97,7 +101,7 @@ ListTile dayplantTile(BuildContext context) {
     onTap: () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) => const DayPlants()),
       );
     },
   );
@@ -145,8 +149,29 @@ ListTile aboutTile(BuildContext context) {
     onTap: () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const NightPlants()),
+        MaterialPageRoute(builder: (context) => const AboutUs()),
       );
+    },
+  );
+}
+
+ListTile exitTile(BuildContext context) {
+  return ListTile(
+    leading: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 14),
+      child: SvgPicture.asset(
+        'assets/exit.svg',
+        width: 25,
+        height: 25,
+      ),
+    ),
+    title: const Text(
+      'Exit',
+      style:
+          TextStyle(fontFamily: 'Poppins', fontSize: 18, color: Colors.black),
+    ),
+    onTap: () {
+      SystemNavigator.pop();
     },
   );
 }
